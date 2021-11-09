@@ -33,7 +33,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          kubernetesDeploy(configs: "vikro-nginx-deployment.yaml", kubeconfigId: "mykubeconfig")
+          kubernetesDeploy(configs: "vikro-nginx-deployment.yaml", kubeconfigId: "KubernetesTanzu")
         }
       }
     }
