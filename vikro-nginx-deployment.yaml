@@ -12,6 +12,8 @@ spec:
   template:
     metadata:
       labels:
+        build_number: ${BUILD_NUMBER}
+        role: rolling-update
         app: vikro-nginx
     spec:
       containers:
